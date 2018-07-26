@@ -3,12 +3,11 @@
 COMMENT =	Berkeley DB, revision ${REV}
 
 REV=		4.8
-VERSION=	${REV}.30.NC
-DISTNAME=	db-${VERSION}
+VERSION=	${REV}.30
+DISTNAME=	db-${VERSION}.NC
+PKGNAME=	db-${VERSION}
 CATEGORIES =	coin
-PKGNAME=	${DISTNAME}
 PKGSPEC=	db->=4.8,<5
-DBLIBDIR=	lib/db4.8
 
 # License: BSD + SleepyCat's additions.
 # Must purchase license to redistribute if not distributing the source.
