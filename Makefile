@@ -22,17 +22,13 @@ SEPARATE_BUILD = yes
 CONFIGURE_SCRIPT = dist/configure
 CONFIGURE_STYLE = gnu
 
-COMPILER = ports-gcc
-
 CONFIGURE_ARGS = --enable-cxx \
 		 --disable-shared \
 		 --with-pic \
-		 --disable-atomicsupport \
 		 --prefix=/usr/local \
 		 --includedir=$$\{prefix}/include/db${DEST_SUBDIR} \
 		 --libdir=$$\{prefix}/lib/db${DEST_SUBDIR} \
-		 --docdir=$$\{prefix}/share/doc/db${DEST_SUBDIR} \
-		 CC=egcc CXX=eg++
+		 --docdir=$$\{prefix}/share/doc/db${DEST_SUBDIR}
 
 post-install:
 	echo "PREFIX=${PREFIX}"

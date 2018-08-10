@@ -1,0 +1,13 @@
+diff --git a/mutex/mut_method.c b/mutex/mut_method.c
+index 2588763..5c6d516 100644
+--- mutex/mut_method.c.orig
++++ mutex/mut_method.c
+@@ -426,7 +426,7 @@ atomic_compare_exchange(env, v, oldval, newval)
+ 	MUTEX_LOCK(env, mtx);
+ 	ret = atomic_read(v) == oldval;
+ 	if (ret)
+-		atomic_init(v, newval);
++		atomic_init_db(v, newval);
+ 	MUTEX_UNLOCK(env, mtx);
+ 
+ 	return (ret);
