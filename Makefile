@@ -11,7 +11,7 @@ PKGSPEC=	db->=4.8,<5
 
 # License: BSD + SleepyCat's additions.
 # Must purchase license to redistribute if not distributing the source.
-PERMIT_PACKAGE_CDROM=	Yes
+PERMIT_PACKAGE=	Yes
 
 #MASTER_SITES=	http://download.oracle.com/berkeley-db/
 
